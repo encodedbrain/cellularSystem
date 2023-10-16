@@ -101,7 +101,10 @@ ClientBin/
 *.[Pp]ublish.xml
 
 *.publishsettings
+<<<<<<< HEAD
 appsettings.Development.json
+=======
+>>>>>>> 5bce68cd56df6f428e5e1410cb99cdbed1af5f34
 
 # RIA/Silverlight projects
 Generated_Code/
