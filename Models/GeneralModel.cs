@@ -1,8 +1,22 @@
 ﻿namespace cellularSystem.Models;
 
-public class General
+public class GeneralModel
 {
     public int Id { get; set; }
-    public string ReleaseYear { get; set; } //ano lançamento
-    public decimal PriceLaunch { get; set; } // .preço lançamento}
+
+    public GeneralModel(string releaseYear, decimal priceLaunch)
+    {
+        ReleaseYear = releaseYear;
+        PriceLaunch = priceLaunch;
+    }
+
+    public GeneralModel()
+    {
+    }
+
+    public string ReleaseYear { get; set; } 
+    public decimal PriceLaunch { get; set; } 
+    
+    public int SpecificationId { get; set; }
+    public SpecificationsModel Specification { get; set; }
 }
